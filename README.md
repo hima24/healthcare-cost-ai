@@ -1,5 +1,7 @@
 # Meridian - Healthcare Cost Prediction & Resource Planning
 
+**Live demo:** https://healthcare-cost-ai-783026334073.us-central1.run.app
+
 A full working implementation of a cloud-native
 healthcare analytics application that predicts per-patient cost from
 Medicare-claims-style data and supports resource-planning decisions.
