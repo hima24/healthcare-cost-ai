@@ -1,0 +1,14 @@
+**/__pycache__/
+*.py[cod]
+.venv/
+backend/.venv/
+data/
+*.zip
+.git/
+.gitignore
+.runtime/
+backend/healthcare_cost.db
+backend/healthcare_cost.db-journal
+backend/healthcare_cost.db-shm
+backend/healthcare_cost.db-wal
+README.md

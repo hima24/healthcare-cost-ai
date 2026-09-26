@@ -1,0 +1,25 @@
+# Local Python environments and caches
+.venv/
+backend/.venv/
+**/__pycache__/
+*.py[cod]
+
+# Local runtime state
+.runtime/
+backend/healthcare_cost.db
+backend/healthcare_cost.db-journal
+backend/healthcare_cost.db-shm
+backend/healthcare_cost.db-wal
+
+# Raw training data (not needed to serve predictions; ~200MB, some files exceed GitHub's 100MB limit)
+data/
+
+# Deployment artifacts
+meridian-deploy.zip
+*.zip
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
