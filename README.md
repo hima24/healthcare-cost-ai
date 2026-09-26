@@ -1,6 +1,6 @@
-# Meridian — Healthcare Cost Prediction & Resource Planning
+# Meridian - Healthcare Cost Prediction & Resource Planning
 
-A full working implementation of the TEAM 8 project proposal: a cloud-native
+A full working implementation of a cloud-native
 healthcare analytics application that predicts per-patient cost from
 Medicare-claims-style data and supports resource-planning decisions.
 
@@ -171,17 +171,4 @@ artifacts. Back them up first if you need to preserve the packaged run.
 | SQLite dashboard queries | Periodic export/aggregate into BigQuery for Looker Studio/Power BI |
 | Static `index.html` | Cloud Run (containerized) or Firebase Hosting |
 
-This is an architectural migration path, not an active cloud integration.
-Production work must still implement authentication, secrets, Cloud Storage
-uploads, Pub/Sub delivery and retries, idempotent workers, Cloud SQL connection
-management, observability, data governance, and deployment infrastructure.
 
-## Team responsibilities mapped to this codebase
-
-| Member | Owns |
-|---|---|
-| Dataset & Database | `cms_data.py`, CMS source files, `database.py` schema |
-| Cost Prediction | `train.py`, `predictor.py`, model comparison/tuning |
-| GCP Architecture | `upload.py` async pipeline → swap for real Pub/Sub + Cloud Run |
-| Dashboard | `frontend/index.html` |
-| Integration & Quality | End-to-end testing, `main.py` wiring, deployment |
